@@ -1,0 +1,478 @@
+/* =========================================================
+   BRAIN MELTING: styles.css
+   The Figma frames are about 27,000px wide, so every size
+   here is the Figma number divided by about 18.8. That makes
+   the page fit a 1440px wide desktop screen.
+   ========================================================= */
+
+
+/* ---------- Colors and page defaults ---------- */
+
+body {
+  --background: #4e1111;   /* dark maroon page color */
+  --nav-bar: #1e1e1e;      /* black nav bar */
+  --mint: #b8eec4;         /* nav links and light green headings */
+  --cream: #f2e1e1;        /* main text */
+  --red: #ed1c24;          /* bright red headings */
+  --dark-red: #840000;     /* dark red headings and shadows */
+  --band: #a24c4c;         /* lighter red bands and cards */
+  --gray: #d9d9d9;         /* tagline under the logo */
+
+  margin: 0;
+  background-color: var(--background);
+  color: var(--cream);
+  font-family: "Instrument Serif", serif;
+  font-size: 33px;
+}
+
+
+/* ---------- Images that should sit on their own line ---------- */
+
+.logo,
+.title-home,
+.title-information,
+.title-activities,
+.title-what-is,
+.title-brain-melting,
+.title-source,
+.home-button,
+.kid-tv,
+.tv-band,
+.profile-photo,
+.photo {
+  display: block;
+}
+
+
+/* ---------- Header: logo, page title, home button ---------- */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Home page only: logo and tagline stacked in the middle */
+.header-centered {
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-heading {
+  margin: 0;
+}
+
+.logo {
+  width: 988px;
+  margin-top: 23px;
+}
+
+.tagline {
+  margin: 0 0 8px 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 36px;
+  color: var(--gray);
+}
+
+.page-tagline {
+  width: 852px;
+  margin: 0 0 0 81px;
+  font-family: "Irish Grover", cursive;
+  font-size: 36px;
+}
+
+.home-button {
+  width: 411px;
+}
+
+/* Title images (each page has its own size) */
+.title-information {
+  width: 896px;
+  margin: 58px 0 0 22px;
+}
+
+.title-activities {
+  width: 1000px;
+  margin: 90px 0 0 0;
+}
+
+.title-what-is {
+  width: 900px;
+  margin: 20px 0 0 0;
+}
+
+.title-brain-melting {
+  width: 760px;
+  margin: 0 0 0 70px;
+}
+
+.title-source {
+  width: 641px;
+  margin: 63px 0 46px 37px;
+}
+
+
+/* ---------- Nav bar (black bar with mint links) ---------- */
+
+.site-nav {
+  background-color: var(--nav-bar);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 8px 40px;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 50px;
+  color: var(--mint);
+  text-decoration: none;
+}
+
+
+/* ---------- Home page ---------- */
+
+.home-main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.title-home {
+  width: 397px;
+  margin: 30px 0 0 0;
+}
+
+.home-columns {
+  display: flex;
+}
+
+.home-text {
+  width: 768px;
+  margin-left: 18px;
+}
+
+.home-question {
+  margin: 0 0 20px 17px;
+  font-family: "Irish Grover", cursive;
+  font-size: 44px;
+  font-weight: normal;
+}
+
+.home-paragraph {
+  margin: 0;
+  font-size: 44px;
+}
+
+.home-picture {
+  width: 626px;
+  margin: 180px 0 0 14px;
+}
+
+.about-link {
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Irish Grover", cursive;
+  text-align: center;
+  text-decoration: none;
+  color: var(--cream);
+}
+
+.about-link-text {
+  margin: 0;
+  font-size: 44px;
+}
+
+.about-link-big {
+  margin: 0;
+  font-size: 48px;
+}
+
+.kid-tv {
+  width: 626px;
+}
+
+
+/* ---------- Information page ---------- */
+
+.info-section {
+  padding-top: 28px;
+}
+
+.info-heading {
+  margin: 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 106px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--red);
+  text-shadow: 5px 0 0 var(--dark-red);
+}
+
+.info-subheading {
+  width: 1290px;
+  margin: 10px auto 20px auto;
+  font-family: "Irish Grover", cursive;
+  font-size: 43px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.info-text {
+  width: 1348px;
+  margin: 0 auto 40px auto;
+  font-size: 33px;
+  text-indent: 45px;
+}
+
+/* The row of three TVs that separates sections */
+.tv-band {
+  width: 100%;
+  max-width: 1498px;
+  margin: 0 auto;
+}
+
+
+/* ---------- Activities page ---------- */
+
+.activities-intro {
+  width: 1353px;
+  margin: 40px auto 0 auto;
+  font-family: "Irish Grover", cursive;
+  font-size: 44px;
+  text-align: center;
+}
+
+.activity-band {
+  margin-top: 130px;
+  padding: 20px 0;
+  background-color: var(--band);
+}
+
+.activity-heading {
+  margin: 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 106px;
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+  text-shadow: -8px 0 0 var(--red);
+}
+
+.photo-row {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  margin-top: 40px;
+}
+
+.photo {
+  width: 421px;
+  height: 281px;
+  object-fit: cover;
+}
+
+.activity-text {
+  width: 1248px;
+  margin: 6px auto 0 auto;
+  font-size: 43px;
+  text-align: center;
+  color: #000000;
+}
+
+.activities-outro {
+  width: 1349px;
+  margin: 190px auto 80px auto;
+  font-family: "Irish Grover", cursive;
+  font-size: 44px;
+  text-align: center;
+}
+
+
+/* ---------- About page ---------- */
+
+.page-body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.about-heading {
+  width: 500px;
+  margin: 40px 0 0 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 90px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--mint);
+  text-shadow: 5px 0 0 var(--dark-red);
+}
+
+.about-section {
+  max-width: 1290px;
+  margin: 0 0 60px 41px;
+}
+
+.about-question {
+  margin: 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 53px;
+  font-weight: normal;
+}
+
+.about-question-dark {
+  color: var(--dark-red);
+}
+
+.about-question-mint {
+  color: var(--mint);
+}
+
+.about-text {
+  margin: 0;
+  font-size: 39px;
+}
+
+.about-link-url {
+  color: var(--cream);
+}
+
+
+/* ---------- Introduction & Background page ---------- */
+
+.intro-columns {
+  display: flex;
+}
+
+.intro-left {
+  width: 737px;
+  margin-left: 33px;
+}
+
+.intro-heading {
+  width: 740px;
+  margin: 50px 0 74px 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 90px;
+  font-weight: normal;
+  text-align: right;
+  color: var(--mint);
+  text-shadow: -5px 0 0 #000000;
+}
+
+.intro-text {
+  margin: 0;
+  font-size: 45px;
+}
+
+.intro-second {
+  width: 1353px;
+  margin: 50px 0 0 33px;
+}
+
+.profile-card {
+  box-sizing: border-box;
+  width: 626px;
+  margin: 46px 0 0 14px;
+  padding: 32px 51px 0 51px;
+  background-color: var(--band);
+  text-align: center;
+}
+
+.profile-photo {
+  width: 516px;
+  height: 688px;
+  object-fit: cover;
+}
+
+.profile-info {
+  margin: 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 34px;
+  color: var(--dark-red);
+}
+
+.profile-link {
+  color: var(--dark-red);
+}
+
+.prompt {
+  width: 1235px;
+  margin: 40px 0 80px 47px;
+}
+
+.prompt-heading {
+  margin: 0 0 20px 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 90px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--mint);
+  text-shadow: -5px 0 0 #000000;
+}
+
+.prompt-subheading {
+  margin: 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 53px;
+  font-weight: normal;
+  color: var(--mint);
+}
+
+.prompt-text {
+  margin: 0;
+  font-size: 45px;
+}
+
+.prompt-options {
+  margin: 0;
+  padding-left: 60px;
+}
+
+.prompt-option {
+  margin: 0;
+}
+
+.option-title {
+  margin: 0;
+  font-family: "Irish Grover", cursive;
+  font-size: 45px;
+  color: var(--mint);
+}
+
+.prompt-list {
+  margin: 0;
+  padding-left: 70px;
+}
+
+
+/* ---------- Sources page ---------- */
+
+.sources-list {
+  box-sizing: border-box;
+  width: 1285px;
+  margin: 0 0 80px 80px;
+  font-size: 37px;
+}
+
+.sources-intro {
+  margin: 0 0 40px 0;
+}
+
+.citation {
+  margin: 0 0 40px 0;
+}
+
+/* Titles use the cite tag. Delete this rule if you want them in italics. */
+.citation-title {
+  font-style: normal;
+}
+
+.source-link {
+  color: var(--cream);
+}
