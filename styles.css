@@ -278,6 +278,42 @@ body {
   object-fit: cover;
 }
 
+/* Holds one photo and its hidden label */
+.photo-card {
+  position: relative;
+  width: 421px;
+  height: 281px;
+}
+
+/* The mint label card. It sits under the photo and is invisible until you hover. */
+.photo-label {
+  position: absolute;
+  top: 281px;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 240px;
+  margin: 0;
+  padding: 0 20px;
+  background-color: var(--mint);
+  font-family: "Irish Grover", cursive;
+  font-size: 60px;
+  text-align: center;
+  color: #000000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.photo-card:hover .photo-label {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .activity-text {
   width: 1248px;
   margin: 6px auto 0 auto;
