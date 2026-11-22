@@ -126,14 +126,22 @@ body {
   box-sizing: border-box;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 8px 40px;
+  padding: 8px 30px;
   list-style: none;
 }
 
 .nav-link {
+  padding: 0 10px;
   font-size: 50px;
   color: var(--mint);
   text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Highlight a nav link while the mouse is over it */
+.nav-link:hover {
+  background-color: var(--mint);
+  color: var(--nav-bar);
 }
 
 
