@@ -23,6 +23,11 @@ body {
   color: var(--cream);
   font-family: "Instrument Serif", serif;
   font-size: 33px;
+
+    background-image: url("images/swirl.svg"), url("images/swirl.svg"), url("images/swirl.svg");
+  background-repeat: repeat;
+  background-position: 1000px 20px, 350px 450px, 50px 1000px;
+  background-size: 500px, 350px, 450px;
 }
 
 
@@ -200,6 +205,7 @@ body {
 .about-link-big {
   margin: 0;
   font-size: 48px;
+  text-decoration: underline;
 }
 
 .kid-tv {
